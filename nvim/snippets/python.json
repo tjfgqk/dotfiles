@@ -1,0 +1,17 @@
+{
+  "PEP 723 Inline Script Metadata": {
+    "prefix": "pep723",
+    "body": [
+      "# /// script",
+      "# requires-python = \">=3.${1:11}\"",
+      "# dependencies = [",
+      "#     \"${2:requests}\",",
+      "#     $3",
+      "# ]",
+      "# ///",
+      "",
+      "$0"
+    ],
+    "description": "PEP 723 Inline script metadata template for single-file python scripts (uv/pipx compatible)"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "MT(spacebar)",
+  "rules": [
+    {
+      "description": "Space Bar: single tap -> spacebar, long press -> right_control",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": { "optional": ["any"] }
+          },
+          "parameters": { "basic.to_if_held_down_threshold_milliseconds": 90 },
+          "to_if_alone": [{ "key_code": "spacebar" }],
+          "to_if_held_down": [{ "key_code": "right_control" }],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

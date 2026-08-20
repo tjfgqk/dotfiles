@@ -1,0 +1,6 @@
+frame = "transparent"
+chdir = "~/Code"
+
+[font]
+normal = ["JetBrainsMono Nerd Font", "PingFang SC", "Apple Symbols"]
+size = 20.0

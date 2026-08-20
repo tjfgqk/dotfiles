@@ -1,0 +1,20 @@
+{
+  "title": "MT(left_shift)",
+  "rules": [
+    {
+      "description": "Left Shift: single tap -> escape, long press -> left shift",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": { "optional": ["any"] }
+          },
+          "parameters": { "basic.to_if_held_down_threshold_milliseconds": 90 },
+          "to_if_alone": [{ "key_code": "escape" }],
+          "to_if_held_down": [{ "key_code": "left_shift" }],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

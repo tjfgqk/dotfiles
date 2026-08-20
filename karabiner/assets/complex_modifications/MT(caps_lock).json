@@ -1,0 +1,20 @@
+{
+  "title": "MT(caps_lock)",
+  "rules": [
+    {
+      "description": "Caps Lock: single tap -> caps_lock, long press -> left_control",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": { "optional": ["any"] }
+          },
+          "parameters": { "basic.to_if_held_down_threshold_milliseconds": 90 },
+          "to_if_alone": [{ "key_code": "caps_lock" }],
+          "to_if_held_down": [{ "key_code": "left_control" }],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

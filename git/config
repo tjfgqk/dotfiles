@@ -1,0 +1,33 @@
+[core]
+	autocrlf = input
+	pager = delta
+
+[user]
+	name = tjfgqk
+	email = tjfgqk@icloud.com
+
+[interactive]
+	diffFilter = delta --color-only
+
+[merge]
+	conflictStyle = zdiff3
+
+[include]
+  path = themes.gitconfig
+
+[delta]
+  syntax-theme = Catppuccin Mocha
+  features = collared-trogon
+  side-by-side = true
+  navigate = true
+  line-numbers = true
+
+  # decoraation
+  file-style = bold yellow
+  file-decoration-style = yellow box
+  hunk-header-style = bold cyan
+  hunk-header-decoration-style = cyan box
+
+  # hyperlinks
+  ; hyperlinks = true
+  ; hyperlinks-file-link-format = "file://{path}:{line}"
