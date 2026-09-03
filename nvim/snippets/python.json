@@ -3,12 +3,13 @@
     "prefix": "pep723",
     "body": [
       "# /// script",
-      "# requires-python = \">=3.${1:11}\"",
+      "# requires-python = \">=3.${1:14}\"",
       "# dependencies = [",
-      "#     \"${2:requests}\",",
-      "#     $3",
+      "#     \"$2\",",
       "# ]",
       "# ///",
+      "",
+      "# pyright: reportMissingImports=false",
       "",
       "$0"
     ],
