@@ -23,6 +23,8 @@ set -gx IPYTHONDIR            $XDG_CONFIG_HOME/ipython
 set -gx JUPYTER_CONFIG_DIR    $XDG_CONFIG_HOME/jupyter
 set -gx JUPYTER_DATA_DIR      $XDG_DATA_HOME/jupyter
 
+set -gx PIXI_HOME             $XDG_DATA_HOME/pixi
+
 # 自定义配置
 set -gx EDITOR nvim
 # set -gx EDITOR "code --wait"
