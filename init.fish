@@ -21,4 +21,5 @@ echo (set_color green)"✔ 依赖检查通过，开始初始化..." (set_color n
 update-shell-inits
 fish_config theme save catppuccin-mocha
 
+# yazi
 ya pkg add "yazi-rs/flavors:catppuccin-mocha"
