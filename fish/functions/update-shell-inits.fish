@@ -12,8 +12,10 @@ function update-shell-inits --description "一键更新所有 CLI 工具的静�
     # 2. 补全脚本 (自动分类放入 completions/ 懒加载目录)
     begin
         set -l path ~/.config/fish/completions
+        mkdir -p $path
         type -q uv; and uv generate-shell-completion fish >$path/uv.fish
         type -q uvx; and uvx --generate-shell-completion fish >$path/uvx.fish
+        type -q mutagen; and mutagen completion fish >$path/mutagen.fish
     end
 
     echo "✅ 所有静态配置与补全已更新完毕！"

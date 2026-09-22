@@ -19,3 +19,8 @@ function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
 end
 abbr -a dotdot --regex '^\.\.+$' --function multicd
+
+abbr -a -- mp 'mutagen project'
+abbr -a -- ms 'mutagen sync'
+
+abbr -a -- proxy 'set -x http_proxy http://127.0.0.1:7897; set -x https_proxy http://127.0.0.1:7897'

@@ -19,6 +19,10 @@ set -gx REDISCLI_HISTFILE     $XDG_STATE_HOME/rediscli_history
 set -gx MYSQL_HISTFILE        $XDG_STATE_HOME/mysql_history
 set -gx SQLITE_HISTORY        $XDG_STATE_HOME/sqlite_history
 
+set -gx IPYTHONDIR            $XDG_CONFIG_HOME/ipython
+set -gx JUPYTER_CONFIG_DIR    $XDG_CONFIG_HOME/jupyter
+set -gx JUPYTER_DATA_DIR      $XDG_DATA_HOME/jupyter
+
 # 自定义配置
 set -gx EDITOR nvim
 # set -gx EDITOR "code --wait"

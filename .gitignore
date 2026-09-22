@@ -27,9 +27,11 @@
 !/yazi/
 !/yazi/**
 /yazi/flavors/
+/yazi/package.toml
 
 !/karabiner/
 !/karabiner/**
+/karabiner/automatic_backups
 
 !/mame/
 !/mame/mame.ini

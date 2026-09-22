@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 set -l required_tools \
-    nvim fd fzf \
+    nvim fd fzf eza rg \
     lazygit delta \
     yazi
 
@@ -20,6 +20,5 @@ echo (set_color green)"✔ 依赖检查通过，开始初始化..." (set_color n
 # fish
 update-shell-inits
 fish_config theme save catppuccin-mocha
-fish_add_path /Library/TeX/texbin
 
 ya pkg add "yazi-rs/flavors:catppuccin-mocha"
