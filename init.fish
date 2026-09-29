@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 set -l required_tools \
-    nvim fd fzf eza rg \
+    nvim bat fd fzf eza rg \
     lazygit delta \
     yazi
 

@@ -26,7 +26,9 @@ set -gx JUPYTER_DATA_DIR      $XDG_DATA_HOME/jupyter
 set -gx PIXI_HOME             $XDG_DATA_HOME/pixi
 
 # 自定义配置
+set -gx VISUAL nvim
 set -gx EDITOR nvim
+set -gx PAGER bat
 # set -gx EDITOR "code --wait"
 # set -gx MANPAGER "sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
 # set -gx LANG en_US.UTF-8
