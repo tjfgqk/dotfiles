@@ -13,6 +13,9 @@ function update-shell-inits --description "一键更新所有 CLI 工具的静�
     begin
         set -l path ~/.config/fish/completions
         mkdir -p $path
+        type -q rg; and rg --generate complete-fish >$path/rg.fish
+        type -q fd; and fd --gen-completions fish >$path/fd.fish
+        type -q bat; and bat --completion fish >$path/bat.fish
         type -q uv; and uv generate-shell-completion fish >$path/uv.fish
         type -q uvx; and uvx --generate-shell-completion fish >$path/uvx.fish
         type -q mutagen; and mutagen completion fish >$path/mutagen.fish
